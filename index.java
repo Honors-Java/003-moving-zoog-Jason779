@@ -6,7 +6,7 @@ void draw() {
 	 // Draw a white background
   ellipseMode(CENTER);
   ellipse(mouseX, mouseY, 1, 1);
-  println(mouseX, mouseY);
+  //println(mouseX, mouseY);
 
   background(255);
   // Set CENTER mode
@@ -29,4 +29,12 @@ void draw() {
   stroke(0);
   line(mouseX + 10, mouseY + 50, mouseX + 20, mouseY + 60);
   line(mouseX - 10, mouseY + 50, mouseX - 20, mouseY + 60);
+  
+
+
+  
 }
+//Take Me to your leader
+void mousePressed(){
+    println("take me to your leader");
+  }
