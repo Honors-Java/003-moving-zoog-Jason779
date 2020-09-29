@@ -8,23 +8,21 @@ void draw() {
   ellipse(mouseX, mouseY, 1, 1);
   println(mouseX, mouseY);
 
-  background(0,100,255);
+  background(255);
   // Set CENTER mode
   ellipseMode(CENTER);
   rectMode(CENTER);
   // Draw Zoog's body
+
   stroke(0);
-  fill(150);
+  fill(mouseY,0,mouseX);
   rect(mouseX, mouseY,20,100);
   // Draw Zoog's head
   stroke(0);
-  fill(255);
+  fill(mouseX, mouseY, 0);
   ellipse(mouseX, mouseY - 30,60,60);
   // Draw Zoog's eyes
-  fill(0);
-
-  // remove the forward slashes in front of each line of code below one at a time. Remove the underline and replace with the proper code to allow your mouse to move Zoog around  💻
-
+  fill(0,mouseX, mouseY);
   ellipse(mouseX + 20, mouseY - 30,16,32);
   ellipse(mouseX - 20, mouseY - 30,16,32);
   // Draw Zoog's legs
